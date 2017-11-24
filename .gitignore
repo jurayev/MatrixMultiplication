@@ -1,6 +1,6 @@
 # IDEA
 .idea/*
-Calculator.iml
+MatrixMultiplication.iml
 /target/
 /bin/
 .idea/workspace.xml

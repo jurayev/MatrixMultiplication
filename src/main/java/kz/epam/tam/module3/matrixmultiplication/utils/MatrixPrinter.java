@@ -15,19 +15,19 @@ public class MatrixPrinter {
             }
         }
         else{
-            System.out.println("Matrix [0][0]");
+            System.out.println("Matrix [0][0]:");
         }
     }
-    public static void printValueError(){
+    static void printValueError(){
         System.out.println("Incorrect value! Please, try again.");
     }
     public static void printDimensionError(){
         System.out.println("Invalid dimension of:");
     }
-    public static void printFillMatrixStepInfo(String text){
+    static void printFillMatrixStepInfo(String text){
         System.out.println("Please enter number of Matrix "+ text);
     }
-    public static void printFillRowStepInfo(){
+    static void printFillRowStepInfo(){
         System.out.println("Please enter elements for the row");
     }
 

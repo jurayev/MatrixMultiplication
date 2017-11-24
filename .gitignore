@@ -1,0 +1,22 @@
+# IDEA
+.idea/*
+Calculator.iml
+/target/
+/bin/
+.idea/workspace.xml
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+
+# Package Files #
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+target/*
+/test-output/*

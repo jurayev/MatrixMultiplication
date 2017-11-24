@@ -7,7 +7,7 @@ public class MatrixMultiplicator {
     public static int[][] multMatrices(int[][]matrixA,int[][]matrixB){
         Matrix matrix;
         int rA = matrixA.length;
-        if (rA == 0){
+        if (rA == 0 || matrixB.length == 0){
              matrix = new Matrix(0, 0);
              return matrix.createMatrix();
         }
@@ -17,7 +17,6 @@ public class MatrixMultiplicator {
         }
         int eB = matrixB[0].length;
         matrix = new Matrix(rA, eB);
-
         int[][] result = matrix.createMatrix();
         for (int r = 0; r < rA; r++) {
             for (int c = 0; c < eB; c++) {

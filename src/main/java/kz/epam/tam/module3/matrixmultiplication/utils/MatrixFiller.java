@@ -4,6 +4,23 @@ import kz.epam.tam.module3.matrixmultiplication.core.Matrix;
 
 public class MatrixFiller {
 
+    public static Matrix fillMatrix() {
+        MatrixPrinter.printFillMatrixStepInfo("rows");
+        int r = KeyboardReader.readInt();
+        MatrixPrinter.printFillMatrixStepInfo("elements(columns)");
+        int e = KeyboardReader.readInt();
+        Matrix mtrx = new Matrix(r,e);
+        for (int i = 0; i < r; i++) {
+            MatrixPrinter.printFillRowStepInfo();
+            for (int j = 0; j < e; j++) {
+                mtrx.getMatrix()[i][j] = KeyboardReader.readInt();
+               int c = KeyboardReader.readInt();
+               mtrx.setMatrixValues(i,j,c);
+            }
+        }
+        return mtrx;
+    }
+    /*
     public static int[][] fillMatrix() {
         MatrixPrinter.printFillMatrixStepInfo("rows");
         int r = KeyboardReader.readInt();
@@ -18,5 +35,5 @@ public class MatrixFiller {
             }
         }
         return matrix;
-    }
+    }*/
 }

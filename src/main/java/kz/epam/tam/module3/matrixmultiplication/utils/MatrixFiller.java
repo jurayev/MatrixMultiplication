@@ -13,27 +13,10 @@ public class MatrixFiller {
         for (int i = 0; i < r; i++) {
             MatrixPrinter.printFillRowStepInfo();
             for (int j = 0; j < e; j++) {
-                mtrx.getMatrix()[i][j] = KeyboardReader.readInt();
-               int c = KeyboardReader.readInt();
-               mtrx.setMatrixValues(i,j,c);
+               int value = KeyboardReader.readInt();
+               mtrx.setMatrixValues(i,j,value);
             }
         }
         return mtrx;
     }
-    /*
-    public static int[][] fillMatrix() {
-        MatrixPrinter.printFillMatrixStepInfo("rows");
-        int r = KeyboardReader.readInt();
-        MatrixPrinter.printFillMatrixStepInfo("elements(columns)");
-        int e = KeyboardReader.readInt();
-        Matrix mtrx = new Matrix(r,e);
-        int[][] matrix = mtrx.createMatrix();
-        for (int i = 0; i < r; i++) {
-            MatrixPrinter.printFillRowStepInfo();
-            for (int j = 0; j < e; j++) {
-                matrix[i][j] = KeyboardReader.readInt();
-            }
-        }
-        return matrix;
-    }*/
 }

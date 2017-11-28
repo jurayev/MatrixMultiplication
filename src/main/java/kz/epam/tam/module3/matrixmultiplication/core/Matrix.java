@@ -10,18 +10,17 @@ public class Matrix {
         this.columns = columns;
         this.matrix = new int[this.rows][this.columns];
     }
-    public int[][] getMatrix() {
-        return matrix;
+    public int getRows() {
+        return rows;
+    }
+    public int getColumns() {
+        return columns;
+    }
+    public int getMatrixValues(int r, int c) {
+        return matrix[r][c];
     }
 
-    public void setMatrixValues(int r,int e,int c) {
-        this.matrix[rows = r][columns = e] = c;
+    public void setMatrixValues(int r,int c,int value) {
+        this.matrix[r][c] = value;
     }
-
-
-/*
-    public int[][] createMatrix(){
-        return new int[rows][columns];
-    }*/
-
 }
